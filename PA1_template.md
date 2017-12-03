@@ -55,7 +55,7 @@ steps_day <- aggregate(steps ~ date, activity, sum)
 hist(steps_day$steps, main = paste("Total Steps Each Day"), col="red", xlab="Number of Steps")
 ```
 
-![](PA1_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
 
 Calculating mean and median:
 
@@ -104,7 +104,7 @@ steps_interval <- aggregate(steps ~ interval, activity, mean)
 plot(steps_interval$interval,steps_interval$steps, type="l", xlab="Interval", ylab="Number of Steps",main="Average Number of Steps per Day by Interval")
 ```
 
-![](PA1_files/figure-html/unnamed-chunk-6-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-6-1.png)<!-- -->
 
 Now, let’s see which 5-minute interval contains the maximum number of steps
 
@@ -145,7 +145,7 @@ hist(steps_day$steps, main = paste("Total Steps Each Day"), col="red", xlab="Num
 legend("topright", c("Imputed", "Non-imputed"), col=c("blue", "red"), lwd=2)
 ```
 
-![](PA1_files/figure-html/unnamed-chunk-10-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-10-1.png)<!-- -->
 
 Calculating new mean and median for imputed data: 
 
@@ -239,6 +239,6 @@ plot<- ggplot(activity_by_date, aes(x = interval , y = steps, color = datetype))
 print(plot)
 ```
 
-![](PA1_files/figure-html/unnamed-chunk-15-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-15-1.png)<!-- -->
 
 There is a higher peak earlier on weekdays, and more overall activity on weekends.
